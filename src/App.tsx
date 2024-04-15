@@ -8,8 +8,8 @@ import "./styles/App.css";
 import Header from "./Header";
 import Footer from "./Footer";
 
-// const apiKey = process.env.REACT_APP_CHARISMA_API_KEY;
-const apiKey = "c562e6a0-1f1e-4d91-8bc4-ac78408d14a8";
+const apiKey = process.env.REACT_APP_CHARISMA_API_KEY;
+// const apiKey = "c562e6a0-1f1e-4d91-8bc4-ac78408d14a8";
 
 const emptyParameters: PlayParameters = {
   storyId: 27575,
