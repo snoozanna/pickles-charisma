@@ -13,7 +13,7 @@
 }
 
 body {
-  background-color: var(--blue);
+  background-color: black;
   font-family: "Supria Regular", sans-serif;
   color: white;
   font-size: var(--font-size);
@@ -29,7 +29,8 @@ p {
 
 .App {
   padding: var(--padding);
-  height: 90vh;
+  min-height: 90vh;
+    height: 100%;
 }
 
 .appContainer {

@@ -11,17 +11,27 @@ const MessagesView = ({ messages }: MessageViewProps) => {
       <div className="messageContainer">
         {messages.map((message, index) => {
           if (message.type === "player") {
-            const text = `YOU: ${message.message.text}`;
-            return <div key={index}>{text}</div>;
-          }
-          if (message.type === "character") {
-            const text = `${message.message.character?.name || "???"}: ${
-              message.message.text
-            }`;
+            const player = "You:";
+            const text = `${message.message.text}`;
+        
             return (
-              <div key={index}>
+              <>
+              <span>{player}</span>
+              <div key={index} className="messageWrapper messagePlayer">
                 <p>{text}</p>
               </div>
+            </>);
+          }
+          if (message.type === "character") {
+            const text = message.message.text;
+            const character = `${message.message.character?.name || "???"}`;
+            return (
+              <>
+              <span>{character}</span>
+              <div key={index} className="messageWrapper messageChar">
+                <p>{text}</p>
+              </div>
+            </>
             );
           }
           return (

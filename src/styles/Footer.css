@@ -2,20 +2,23 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
+  width: 80%;
+  position: fixed;
+  bottom: 2%;
+  left: 5%;
+  padding: 1rem;
 }
 
-.micBtnWrapper {
-  button {
+.micBtnWrapper > button{
+
     background-color: transparent;
     box-shadow: none;
     border: none;
   }
 
-  img {
+  .micBtnWrapper >  button > img {
     max-width: 50px;
   }
-}
 
 /* INPUT  */
 

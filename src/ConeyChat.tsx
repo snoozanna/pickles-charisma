@@ -42,8 +42,8 @@ const MyChat = ({ conversationParameters, apiKey }: MyChatProps) => {
     >
       <ConversationView
         conversationUuid={conversationUuid}
-        // startGraphReferenceId={startGraphReferenceId}
-        startGraphReferenceId={undefined}
+        startGraphReferenceId={startGraphReferenceId}
+        // startGraphReferenceId={undefined}
       />
     </Playthrough>
   );
